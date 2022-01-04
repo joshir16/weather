@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="container__card">
+        <!-- head ----------- -->
+        <h3 class="container__card__head">
+          <span class="container__card__head__span day">Fri</span>
+          <span class="container__card__head__span date">16</span>
+          <span class="container__card__head__span month">Dec,</span> &nbsp;
+          <span class="container__card__head__span city">Delhi</span>
+        </h3>
+
+        <!-- card ----------- -->
+        <div class="container__card__weather">
+          <h2 class="container__card__weather__temp temp">16&deg;</h2>
+          <p class="container__card__weather__msg msg">Rainy</p>
+
+          <div class="container__card__weather__data">
+            <p class="container__card__weather__data__para">
+              Max:
+              <span class="container__card__weather__data__max-temp max-temp">
+                16 </span
+              >&deg; C
+            </p>
+            <p class="container__card__weather__data__para">
+              Min:
+              <span class="container__card__weather__data__min-temp min-temp">
+                7 </span
+              >&deg; C
+            </p>
+            <p class="container__card__weather__data__para">
+              Humidity:
+              <span class="container__card__weather__data__max-temp max-temp">
+                20 </span
+              >%
+            </p>
+            <p class="container__card__weather__data__para">
+              Wind:
+              <span class="container__card__weather__data__max-temp max-temp">
+                2
+              </span>
+              <span class="unit" title="meter/sec"> m/s </span>
+            </p>
+          </div>
+        </div>
+
+        <!-- next day ---------- -->
+        <div class="container__card__next">
+          <div class="container__card__next__day">
+            <h4 class="container__card__next__day__head">
+              <span class="container__card__next__day__head__day">Sat</span>
+              &nbsp;
+              <span class="container__card__next__day__head__date">17</span>
+              <span class="container__card__next__day__head__month">Dec</span>
+              &nbsp;
+            </h4>
+            <p class="container__card__next__day__temp">
+              <span class="container__card__next__day__temp__max">12&deg;</span>
+              |
+              <span class="container__card__next__day__temp__min">4&deg;</span>
+            </p>
+          </div>
+
+          <div class="container__card__next__day">
+            <h4 class="container__card__next__day__head">
+              <span class="container__card__next__day__head__day">Sun</span>
+              &nbsp;
+              <span class="container__card__next__day__head__date">18</span>
+              <span class="container__card__next__day__head__month">Dec</span>
+              &nbsp;
+            </h4>
+            <p class="container__card__next__day__temp">
+              <span class="container__card__next__day__temp__max">9&deg;</span>
+              |
+              <span class="container__card__next__day__temp__min">2&deg;</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- img --------------------------------------- -->
+      <div class="container__img cloudy"></div>
+    </section>
+  </body>
+</html>
