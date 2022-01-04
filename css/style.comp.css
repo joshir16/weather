@@ -25,10 +25,10 @@ html {
       font-size: 43.75%; } }
   @media only screen and (max-width: 50em) {
     html {
-      font-size: 43.75%; } }
+      font-size: 37.5%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 37.5%; } }
+      font-size: 31.25%; } }
 
 body {
   font-weight: 400;
@@ -42,6 +42,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     body {
       min-height: 120rem; } }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 5rem; } }
 
 .container {
   max-width: 120rem;
@@ -52,7 +55,7 @@ body {
   background-color: #eee;
   position: relative;
   overflow: hidden;
-  box-shadow: 1rem 2rem 2rem 0rem #242424; }
+  box-shadow: 1.5rem 1.5rem 1rem 0rem #363636; }
   @media only screen and (max-width: 62.5em) {
     .container {
       max-width: 80rem;
@@ -128,6 +131,9 @@ body {
         height: 60rem;
         grid-column: 1 / -1;
         grid-row: 1 / 2; } }
+    @media only screen and (max-width: 37.5em) {
+      .container__img {
+        height: 58rem; } }
 
 .sunny {
   background-image: url(../img/sunny.svg);
