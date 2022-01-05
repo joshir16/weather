@@ -1,3 +1,3 @@
 # Weather App
 
-## https://weather-rj.netlify.app/
+## https://weatherapprj.netlify.app/
