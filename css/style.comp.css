@@ -82,7 +82,7 @@ body {
       text-align: center;
       font-size: 3rem;
       font-weight: 400;
-      padding: 2rem 3rem; }
+      padding: 1rem 3rem; }
     .container__card__weather {
       width: 100%;
       padding: 2rem 3rem; }
@@ -98,7 +98,8 @@ body {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem; }
+        gap: 1.5rem;
+        margin-top: 1rem; }
         .container__card__weather__data__para {
           font-size: 2.2rem;
           font-weight: 400; }
@@ -118,10 +119,10 @@ body {
           border-right: 1px solid black; }
         .container__card__next__day__head {
           font-size: 2.4rem;
-          font-weight: 500; }
+          font-weight: 400; }
         .container__card__next__day__temp {
           font-size: 2.4rem;
-          font-weight: 500; }
+          font-weight: 400; }
   .container__img {
     width: 70rem;
     height: 100%; }

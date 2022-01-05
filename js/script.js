@@ -1,3 +1,8 @@
+const days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
+
+// prettier-ignore
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
 // current day------------------------------------------
 const day = document.querySelector(".day");
 const date = document.querySelector(".date");
@@ -64,9 +69,29 @@ const renderData = function (data) {
   dayAfterMax.innerText = `${data.daily[2].temp.max.toFixed(0)}`;
   dayAfterMin.innerText = `${data.daily[2].temp.min.toFixed(0)}`;
 
-  // // dates ---------------------
-  // const dt = data.current.dt;
-  // console.log(dt);
+  // dates ---------------------
+  let todayTimeStamp = `${data.daily[0].dt}`;
+  let currentDate = new Date(todayTimeStamp * 1000);
+
+  day.innerText = `${days[currentDate.getDay()]}`;
+  date.innerText = `${currentDate.getDate()}`;
+  month.innerText = `${months[currentDate.getMonth()]}`;
+
+  // next day date --------------------------------
+  let nextTimeStamp = `${data.daily[1].dt}`;
+  let nextDate = new Date(nextTimeStamp * 1000);
+
+  dayNextDay.innerText = `${days[nextDate.getDay()]}`;
+  dayNextDate.innerText = `${nextDate.getDate()}`;
+  dayNextMonth.innerText = `${months[nextDate.getMonth()]}`;
+
+  // after day date --------------------------------
+  let afterTimeStamp = `${data.daily[2].dt}`;
+  let afterDate = new Date(afterTimeStamp * 1000);
+
+  dayAfterDay.innerText = `${days[afterDate.getDay()]}`;
+  dayAfterDate.innerText = `${afterDate.getDate()}`;
+  dayAfterMonth.innerText = `${months[afterDate.getMonth()]}`;
 };
 
 /////////////////////////////////////////////////////////////////////////////
