@@ -118,10 +118,10 @@ body {
         .container__card__next__day:first-child {
           border-right: 1px solid black; }
         .container__card__next__day__head {
-          font-size: 2.4rem;
+          font-size: 2rem;
           font-weight: 400; }
         .container__card__next__day__temp {
-          font-size: 2.4rem;
+          font-size: 2rem;
           font-weight: 400; }
   .container__img {
     width: 70rem;
@@ -163,5 +163,15 @@ body {
 
 .smoke {
   background-image: url(../img/smoke.svg);
+  background-size: cover;
+  background-position: center; }
+
+.mist {
+  background-image: url(../img/mist.svg);
+  background-size: cover;
+  background-position: center; }
+
+.snow {
+  background-image: url(../img/snow.svg);
   background-size: cover;
   background-position: center; }

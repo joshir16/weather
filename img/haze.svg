@@ -18,7 +18,7 @@
 <ellipse cx="327" cy="120.324" rx="53" ry="43.5" transform="rotate(-9.08664 327 120.324)" fill="#DDDDDD"/>
 <ellipse cx="381.844" cy="136.958" rx="52.5766" ry="39" transform="rotate(-14.7962 381.844 136.958)" fill="#DDDDDD"/>
 <ellipse cx="322.5" cy="151.824" rx="82.5" ry="35" fill="#DDDDDD"/>
-<ellipse rx="36.6594" ry="31.3795" transform="matrix(0.986314 -0.164879 0.151256 0.988495 582.107 51.0628)" fill="#DDDDDD"/>
+<ellipse rx="36.6594" ry="31.3795" transform="matrix(0.986314 -0.164879 0.151256 0.988495 582.107 51.0629)" fill="#DDDDDD"/>
 <ellipse rx="36.4341" ry="28.0852" transform="matrix(0.963938 -0.266128 0.245011 0.96952 619.999 63.0747)" fill="#DDDDDD"/>
 <ellipse cx="578.998" cy="73.8099" rx="56.9985" ry="25.2746" fill="#DDDDDD"/>
 </g>
