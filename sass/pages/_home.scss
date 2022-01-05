@@ -156,14 +156,20 @@
   background-position: center;
 }
 
-.cloudy {
-  background-image: url(../img/cloudy.svg);
+.clouds {
+  background-image: url(../img/clouds.svg);
   background-size: cover;
   background-position: center;
 }
 
-.rainy {
-  background-image: url(../img/rainy.svg);
+.rain {
+  background-image: url(../img/rain.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.drizzle {
+  background-image: url(../img/drizzle.svg);
   background-size: cover;
   background-position: center;
 }

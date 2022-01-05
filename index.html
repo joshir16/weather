@@ -14,7 +14,7 @@
   <body>
     <section class="container">
       <div class="container__card">
-        <!-- head ----------- -->
+        <!-- head ------------------------------------------------------------- -->
         <h3 class="container__card__head">
           <span class="container__card__head__span day">Fri</span>
           <span class="container__card__head__span date">16</span>
@@ -22,33 +22,47 @@
           <span class="container__card__head__span city">Delhi</span>
         </h3>
 
-        <!-- card ----------- -->
+        <!-- card ------------------------------------------------------------- -->
         <div class="container__card__weather">
-          <h2 class="container__card__weather__temp temp">16&deg;</h2>
-          <p class="container__card__weather__msg msg">Rainy</p>
+          <h2 class="container__card__weather__temp">
+            <span id="temp">16</span>&deg;
+          </h2>
+          <p id="msg" class="container__card__weather__msg msg">Rainy</p>
 
           <div class="container__card__weather__data">
             <p class="container__card__weather__data__para">
               Max:
-              <span class="container__card__weather__data__max-temp max-temp">
+              <span
+                id="max-temp"
+                class="container__card__weather__data__max-temp max-temp"
+              >
                 16 </span
               >&deg; C
             </p>
             <p class="container__card__weather__data__para">
               Min:
-              <span class="container__card__weather__data__min-temp min-temp">
+              <span
+                id="min-temp"
+                class="container__card__weather__data__min-temp min-temp"
+              >
                 7 </span
               >&deg; C
             </p>
             <p class="container__card__weather__data__para">
               Humidity:
-              <span class="container__card__weather__data__max-temp max-temp">
+              <span
+                id="humidity"
+                class="container__card__weather__data__max-temp max-temp"
+              >
                 20 </span
               >%
             </p>
             <p class="container__card__weather__data__para">
               Wind:
-              <span class="container__card__weather__data__max-temp max-temp">
+              <span
+                id="wind"
+                class="container__card__weather__data__max-temp max-temp"
+              >
                 2
               </span>
               <span class="unit" title="meter/sec"> m/s </span>
@@ -56,7 +70,7 @@
           </div>
         </div>
 
-        <!-- next day ---------- -->
+        <!-- next day --------------------------------------------------------- -->
         <div class="container__card__next">
           <div class="container__card__next__day">
             <h4 class="container__card__next__day__head">
@@ -91,7 +105,7 @@
       </div>
 
       <!-- img --------------------------------------- -->
-      <div class="container__img rainy"></div>
+      <div id="weather__img" class="container__img"></div>
     </section>
   </body>
 </html>
