@@ -1,3 +1,3 @@
 # Weather App
 
-## https://joshir16.github.io/weather/
+## https://weather-rj.netlify.app/
