@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="title" content="Weather App" />
+    <meta
+      name="description"
+      content="App uses openweather api, It shows the current weather and maximum & minimum temperature of current day and next 2 days."
+    />
+
     <link rel="stylesheet" href="css/style.css" />
 
     <script defer src="js/script.js"></script>
@@ -16,20 +22,20 @@
       <div class="container__card">
         <!-- ================================================================== -->
         <!-- head ------------------------------------------------------------- -->
-        <h3 class="container__card__head">
+        <h2 class="container__card__head">
           <!-- <span class="container__card__head__span">Error</span> -->
           <span class="container__card__head__span day"></span>
           <span class="container__card__head__span date"></span>
           <span class="container__card__head__span month"></span>
           <!-- <span class="container__card__head__span city">Delhi</span> -->
-        </h3>
+        </h2>
 
         <!-- ================================================================== -->
         <!-- card ------------------------------------------------------------- -->
         <div class="container__card__weather">
-          <h2 class="container__card__weather__temp">
+          <h3 class="container__card__weather__temp">
             <span id="temp">0</span>&deg;
-          </h2>
+          </h3>
           <p id="msg" class="container__card__weather__msg msg"></p>
 
           <div class="container__card__weather__data">
