@@ -13,6 +13,9 @@
 
   box-shadow: 1.5rem 1.5rem 1rem 0rem rgb(54, 54, 54);
 
+  opacity: 0;
+  visibility: hidden;
+
   @media only screen and (max-width: $bp-large) {
     max-width: 80rem;
     width: 100%;
@@ -147,6 +150,14 @@
   }
 }
 
+// ==========================================================================
+
+.display_Box {
+  opacity: 1;
+  visibility: visible;
+}
+
+// ==========================================================================
 // ==========================================================================
 //  Clear, Clouds, Rain, Thunderstorm,  Drizzle, Snow, Mist, Fog, Smoke, Haze,  dust
 

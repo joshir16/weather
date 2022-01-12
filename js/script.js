@@ -33,15 +33,19 @@ const dayAfterDay = document.getElementById("dayafter__day");
 const dayAfterDate = document.getElementById("dayafter__date");
 const dayAfterMonth = document.getElementById("dayafter__month");
 
+const closeBtn = document.getElementById("close");
+const popUp = document.querySelector(".popup");
+
+const weatherBox = document.querySelector(".container");
+
 /////////////////////////////////////////////////////////////////////////////
 const apiKey = "0fcceef01d62a49fc6701f61ed924699";
 /////////////////////////////////////////////////////////////////////////////
 
 // render data to html ======================================================
 const renderData = function (data) {
-  // =============================================================
   // current Temp ------------------------------------------------
-  temp.innerText = `${data.current.temp.toFixed(1)}`;
+  temp.innerText = `${data.current.temp.toFixed(0)}`;
 
   msgType.innerText = data.current.weather[0].main;
   const weatherMsg = data.current.weather[0].main.toLowerCase();
@@ -118,15 +122,35 @@ const getWeatherData = function (lat, log) {
 };
 
 // get location =============================================================
-navigator.geolocation.getCurrentPosition(
-  (position) => {
-    const { latitude: lat } = position.coords;
-    const { longitude: log } = position.coords;
+// navigator.geolocation.getCurrentPosition(
+//   (position) => {
+//     const { latitude: lat } = position.coords;
+//     const { longitude: log } = position.coords;
 
-    getWeatherData(lat, log);
-  },
-  function (error) {
-    if (error.code == error.PERMISSION_DENIED)
-      renderError(`Location denied ❌`);
-  }
-);
+//     getWeatherData(lat, log);
+//   },
+//   function (error) {
+//     if (error.code == error.PERMISSION_DENIED)
+//       renderError(`Location denied ❌`);
+//   }
+// );
+
+// --------------------------------------------------------
+
+closeBtn.addEventListener("click", function () {
+  popUp.classList.add("close");
+  weatherBox.classList.add("display_Box");
+
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const { latitude: lat } = position.coords;
+      const { longitude: log } = position.coords;
+
+      getWeatherData(lat, log);
+    },
+    function (error) {
+      if (error.code == error.PERMISSION_DENIED)
+        renderError(`Location denied ❌`);
+    }
+  );
+});
