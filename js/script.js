@@ -39,7 +39,7 @@ const popUp = document.querySelector(".popup");
 const weatherBox = document.querySelector(".container");
 
 /////////////////////////////////////////////////////////////////////////////
-const apiKey = "0fcceef01d62a49fc6701f61ed924699";
+const apiKey = "bhvKyTHmN6RVlEpakhD5LoxxhAdvk3yC";
 /////////////////////////////////////////////////////////////////////////////
 
 // render data to html ======================================================
